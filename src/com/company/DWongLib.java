@@ -1,14 +1,14 @@
 package com.company;
 
 public class DWongLib {
-    public void mergesort(int[] arr)
+    public static void mergesort(int[] arr)
     {
         int n = arr.length;
         int[] temp = new int[n];
         mergeSortHelper(arr, 0, n-1, temp);
     }
 
-    public void mergeSortHelper(int[] arr, int left, int right, int[] temp)
+    public static void mergeSortHelper(int[] arr, int left, int right, int[] temp)
     {
         if(left < right)
         {
@@ -19,7 +19,7 @@ public class DWongLib {
         }
     }
 
-    public void merge(int[] arr, int left, int mid, int right, int[] temp)
+    public static void merge(int[] arr, int left, int mid, int right, int[] temp)
     {
         {
             int i = left;
